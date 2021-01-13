@@ -9980,12 +9980,16 @@ h3 {
 
 :root {
   --clr-light: #ffffff;
-  --clr-dark: #00332a;
+  --clr-dark: #000000;
   --clr-primary: #dbffa2;
   --clr-secondary: #c3fcf2;
   --clr-accent: #c15435;
   --clr-navLight: #def696;
-  --clr-navDark: #282f12;
+  --clr-navDark: #000000;
+  --clr-cardLight: #d9ddd0;
+  --clr-cardDark: #000000;
+  --foregroundCard: var(--clr-cardDark);
+  --backgroundCard: var(--clr-cardLight);
   --foregroundNav: var(--clr-navDark);
   --backgroundNav: var(--clr-navLight);
   --foreground: var(--clr-dark);
@@ -9993,13 +9997,17 @@ h3 {
 }
 
 .darkmode {
-  --clr-light: #babaab;
+  --clr-light: #abab89;
   --clr-dark: #373736;
   --clr-primary: #202302;
   --clr-secondary: #ffffff;
   --clr-accent: #c15435;
   --clr-navLight: #def696;
   --clr-navDark: #282f12;
+  --clr-cardLight: #dbffa2;
+  --clr-cardDark: #676464;
+  --foregroundCard: var(--clr-cardLight);
+  --backgroundCard: var(--clr-cardDark);
   --foregroundNav: var(--clr-navLight);
   --backgroundNav: var(--clr-navDark);
   --foreground: var(--clr-light);
@@ -10011,6 +10019,11 @@ body {
   color: var(--foreground);
   font-size: 18px;
   line-height: 1.6;
+}
+
+.card {
+  background: var(--backgroundCard);
+  color: var(--foregroundCard);
 }
 
 .themenavbar {

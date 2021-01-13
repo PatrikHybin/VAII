@@ -5,23 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4d1e6983-6dc2-481e-8734-83fb625408e0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8482fcfd-e7f7-4f81-8168-6c46a1f8ca8a.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/8482fcfd-e7f7-4f81-8168-6c46a1f8ca8a.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BookController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BookController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Book.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Book.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_01_12_131104_create_books_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_01_12_131104_create_books_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/blankBook.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/ham.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/knihy.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/nature.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/book/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/book/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/book/info.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/book/info.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/main.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -204,7 +191,7 @@
       <workItem from="1610456999630" duration="14435000" />
       <workItem from="1610472911261" duration="17221000" />
       <workItem from="1610543562837" duration="6052000" />
-      <workItem from="1610551371494" duration="19982000" />
+      <workItem from="1610551371494" duration="20725000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1610560388609</created>
@@ -213,7 +200,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610560388609</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added css code to books">
+      <created>1610578922286</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1610578922287</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -221,7 +215,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="init commit" />
+    <MESSAGE value="added css code to books" />
+    <option name="LAST_COMMIT_MESSAGE" value="added css code to books" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1209" y="404" width="617" height="438" key="#Notifications" timestamp="1609970935632">
@@ -237,9 +232,10 @@
     </state>
     <state x="-1230" y="335" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/-1920.0.1920.1160@-1920.0.1920.1160" timestamp="1610466338682" />
     <state x="690" y="300" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/-1920.0.1920.1160@0.0.1920.1040" timestamp="1610561976362" />
-    <state x="567" y="97" key="CommitChangelistDialog2" timestamp="1610560385725">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="-1353" y="108" key="CommitChangelistDialog2" timestamp="1610578919867">
+      <screen x="-1920" y="0" width="1920" height="1160" />
     </state>
+    <state x="-1353" y="108" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1160@-1920.0.1920.1160" timestamp="1610578919867" />
     <state x="567" y="97" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1160@0.0.1920.1040" timestamp="1610560385725" />
     <state x="629" y="298" key="EditFileWatcherDialog" timestamp="1610547984694">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -278,9 +274,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1160@0.0.1920.1040" timestamp="1610560020388" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1610560415611">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="-1368" y="282" key="Vcs.Push.Dialog.v2" timestamp="1610578924671">
+      <screen x="-1920" y="0" width="1920" height="1160" />
     </state>
+    <state x="-1368" y="282" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1160@-1920.0.1920.1160" timestamp="1610578924671" />
     <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1160@0.0.1920.1040" timestamp="1610560415611" />
     <state x="-991" y="393" width="415" height="371" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1609971227528">
       <screen x="-1920" y="0" width="1920" height="1160" />
