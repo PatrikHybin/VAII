@@ -14,15 +14,15 @@
                             </div>
                         @endif
 
+                        <div>
+                            <img src="{{ @$model->image }}" width="250px" height="300px">
                             <div>
-                                <img src="{{ @$model->image }}" width="250px" height="300px">
-                                <div>
-                                    {{ @$model->text }}
-                                </div>
-                                <div class="mb-3">
-                                    <a href="{{ route('book.editBook', [@$model->id]) }}" class="btn btn-sm btn-dark" role="button">Edit book</a>
-                                </div>
-                    </div>
+                                {{ @$model->text }}
+                            </div>
+                            <div class="mb-3">
+                                <a href="{{ route('book.editBook', [@$model->id]) }}" class="btn btn-sm btn-dark" role="button">Edit book</a>
+                            </div>
+                        </div>
                 </div>
             </div>
         </div>

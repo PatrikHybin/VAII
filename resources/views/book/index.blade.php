@@ -20,17 +20,20 @@
             @foreach ($books->chunk(4) as $chunk)
                 <div class="row ">
                     @foreach ($chunk as $book)
-                        <div class="col-sm-3 mb-5 embed-responsive">
-                            <a href="{{ route('book.info',[$book->id]) }}">
-                            <div>
-                                <img src="{{ $book->image }}" class="ml-0 embed-responsive-4by3" height="186px" width="140px">
-                                <br>
-                                <h5 id="books-list-text" class="">
-                                    {{ $book->name }}
-                                </h5>
-                                <a id="delete-button-book-list" href={{ route('book.delete', [$book->id]) }} title="Delete" data-method="DELETE" class="btn btn-sm btn-danger" data-confrim="Are you sure?">Delete</a>
+                        <div class="col-sm-3 mb-4 embed-responsive">
+                            <div class="card bookslistcard">
+                                <a href="{{ route('book.info',[$book->id]) }}">
+                                    <div>
+                                        <img src="{{ $book->image }}" class="bookslistimage">
+                                        <br>
+                                        <a class="bookslisttext">
+                                            {{ $book->name }}
+                                        </a>
+                                        <br>
+                                        <a href={{ route('book.delete', [$book->id]) }} title="Delete" data-method="DELETE" class="btn btn-sm btn-danger bookslistdelete" data-confrim="Are you sure?">Delete</a>
+                                    </div>
+                                </a>
                             </div>
-                            </a>
                         </div>
                     @endforeach
                 </div>

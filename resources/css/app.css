@@ -1,12 +1,63 @@
-#random-book-button {
-    position: absolute;
-    right: 0;
+
+
+.bookslistimage,
+.bookslisttext,
+.bookslistdelete {
+    position: relative;
+    display: block;
+
 }
 
-#delete-button-book-list {
-    position: absolute;
-    right: 0;
+.bookslistimage {
+    height: 190px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    width: 50%;
+
+}
+
+.bookslistdelete {
+    bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50px;
+    padding: 0;
+}
+
+.bookslisttext {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 18px;
+    height: 56px;
+    overflow-wrap: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.bookslistcard {
+    margin: 0 10px;
 }
 
 
+ .bookCover {
+    width: 140px;
+    height: 186px;
+    margin: 5px 0;
 
+}
+
+.horizontal {
+    height:3px;
+    color: #000000;
+    border-top: 6px solid black;
+
+}
+
+.vertical {
+    border-left: 6px solid black;
+    height: 190px;
+    position: absolute;
+    left: 50%;
+}

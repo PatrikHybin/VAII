@@ -2,11 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use Aginev\Datagrid\Datagrid;
 use App\Models\Book;
-use DebugBar\DebugBar;
-use http\Message;
-use http\Url;
 use Illuminate\Http\Request;
 use function PHPUnit\Framework\stringContains;
 
@@ -33,6 +29,18 @@ class BookController extends Controller
         return view('book.index', [
             'books' => $books
         ]);
+
+
+    }
+
+    public function home(Request $request)
+    {
+        $books = Book::all()->sortByDesc('created_at')->take(3);
+
+        return view('home', [
+            'books' => $books
+        ]);
+
     }
 
     /**

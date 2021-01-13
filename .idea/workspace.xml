@@ -4,7 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4d1e6983-6dc2-481e-8734-83fb625408e0" name="Default Changelist" comment="" />
+    <list default="true" id="4d1e6983-6dc2-481e-8734-83fb625408e0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8482fcfd-e7f7-4f81-8168-6c46a1f8ca8a.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/8482fcfd-e7f7-4f81-8168-6c46a1f8ca8a.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BookController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BookController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Book.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Book.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_01_12_131104_create_books_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_01_12_131104_create_books_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/blankBook.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/ham.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/knihy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/nature.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/book/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/book/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/book/info.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/book/info.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -186,12 +204,24 @@
       <workItem from="1610456999630" duration="14435000" />
       <workItem from="1610472911261" duration="17221000" />
       <workItem from="1610543562837" duration="6052000" />
-      <workItem from="1610551371494" duration="8672000" />
+      <workItem from="1610551371494" duration="19982000" />
     </task>
+    <task id="LOCAL-00001" summary="init commit">
+      <created>1610560388609</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1610560388609</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="init commit" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1209" y="404" width="617" height="438" key="#Notifications" timestamp="1609970935632">
@@ -202,10 +232,15 @@
       <screen x="-1920" y="0" width="1920" height="1160" />
     </state>
     <state x="-1368" y="238" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/-1920.0.1920.1160@-1920.0.1920.1160" timestamp="1609971193688" />
-    <state x="-1230" y="335" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1610466338682">
-      <screen x="-1920" y="0" width="1920" height="1160" />
+    <state x="690" y="300" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1610561976362">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1230" y="335" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/-1920.0.1920.1160@-1920.0.1920.1160" timestamp="1610466338682" />
+    <state x="690" y="300" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/-1920.0.1920.1160@0.0.1920.1040" timestamp="1610561976362" />
+    <state x="567" y="97" key="CommitChangelistDialog2" timestamp="1610560385725">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="567" y="97" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1160@0.0.1920.1040" timestamp="1610560385725" />
     <state x="629" y="298" key="EditFileWatcherDialog" timestamp="1610547984694">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -243,6 +278,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1160@0.0.1920.1040" timestamp="1610560020388" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1610560415611">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1160@0.0.1920.1040" timestamp="1610560415611" />
     <state x="-991" y="393" width="415" height="371" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1609971227528">
       <screen x="-1920" y="0" width="1920" height="1160" />
     </state>
@@ -251,6 +290,10 @@
       <screen x="-1920" y="0" width="1920" height="1160" />
     </state>
     <state x="-1070" y="467" width="423" height="489" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1920.1040/-1920.0.1920.1160@-1920.0.1920.1160" timestamp="1609971161658" />
+    <state x="803" y="253" width="480" height="534" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1610572311545">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="803" y="253" width="480" height="534" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1920.1040/-1920.0.1920.1160@0.0.1920.1040" timestamp="1610572311545" />
     <state x="623" y="229" width="672" height="608" key="search.everywhere.popup" timestamp="1610549816276">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
