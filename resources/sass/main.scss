@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css?family=Assistant:400,700|Playfair+Display:900");
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+    :root {
+        --clr-light: #ffffff;
+        --clr-dark: #00332a;
+        --clr-primary: #dbffa2;
+        --clr-secondary: #c3fcf2;
+        --clr-accent: #c15435;
+
+        --clr-navLight: #def696;
+        --clr-navDark: #282f12;
+
+        --foregroundNav: var(--clr-navDark);
+        --backgroundNav: var(--clr-navLight);
+
+        --foreground: var(--clr-dark);
+        --background: var(--clr-light);
+
+}
+
+.darkmode {
+    --clr-light: #babaab;
+    --clr-dark: #373736;
+    --clr-primary: #202302;
+    --clr-secondary: #ffffff;
+    --clr-accent: #c15435;
+
+    --clr-navLight: #def696;
+    --clr-navDark: #282f12;
+
+    --foregroundNav: var(--clr-navLight);
+    --backgroundNav: var(--clr-navDark);
+
+    --foreground: var(--clr-light);
+    --background: var(--clr-dark);
+}
+
+
+body {
+    background: var(--background);
+    color: var(--foreground);
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.themenavbar {
+    background: var(--backgroundNav);
+}
+
+.themenavbar a {
+    color: var(--foregroundNav);
+}
+
+.themenavbar .dropdown-menu {
+    background: var(--backgroundNav);
+}
+
+.bookOnList {
+    margin-left: 50px;
+}
+
+.btn + .btn {
+    margin-left: 1em;
+}
+
+.btn-secondary {
+    background: var(--foreground);
+    color: var(--background);
+// border: currentColor solid 2px;
+}
+
+.btn-accent {
+    background: var(--clr-accent);
+    color: var(--foreground);
+}
+
+
+
+
