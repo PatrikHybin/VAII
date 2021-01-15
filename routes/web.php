@@ -32,6 +32,9 @@ Route::get('/book/{book}/info', [BookController::class , 'show'])->name('book.in
     return view('book.index');
 });*/
 
+//Route::post('ajaxChangeRole',[UserController::class , 'ajaxChangeRole'])->name('user.ajaxChangeRole');
+
+
 Route::group(['middleware' => ['auth']], function () {
     Route::resource('book', BookController::class);
     Route::get('/book/{book}/delete', [BookController::class , 'destroy'])->name('book.delete');
@@ -40,6 +43,9 @@ Route::group(['middleware' => ['auth']], function () {
 
     Route::resource('user', UserController::class);
     Route::get('/user/{user}/delete', [UserController::class , 'destroy'])->name('user.delete');
+
+    Route::post('/ajaxChangeRole', [UserController::class, 'ajaxChangeRole'])->name('user.ajaxChangeRole');
+    Route::get('/usersList', [UserController::class, 'usersList'])->name('user.usersList');
 });
 
 

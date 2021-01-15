@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Book;
 use Illuminate\Http\Request;
 use function PHPUnit\Framework\stringContains;
+use function Sodium\increment;
 
 class BookController extends Controller
 {
@@ -97,6 +98,12 @@ class BookController extends Controller
      */
     public function show(Book $book)
     {
+
+
+        $book->update([
+            'view_number' => $book['view_number'] + 1
+        ]);
+
         return view('book.info', [
             'model' => $book
         ]);
@@ -144,7 +151,7 @@ class BookController extends Controller
             ]);
         }
 
-        return redirect()->route('book.index');
+        return redirect()->route('book.info', [$book->id]);
     }
 
     /**

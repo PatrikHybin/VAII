@@ -22,6 +22,10 @@
   --foreground: var(--clr-dark);
   --background: var(--clr-light);
 }
+:root table, :root table td, :root table th {
+  border: solid 3px;
+  border-color: black;
+}
 
 .darkmode {
   --clr-light: #abab89;
@@ -30,7 +34,7 @@
   --clr-secondary: #ffffff;
   --clr-accent: #c15435;
   --clr-navLight: #def696;
-  --clr-navDark: #282f12;
+  --clr-navDark: #22221e;
   --clr-cardLight: #dbffa2;
   --clr-cardDark: #676464;
   --foregroundCard: var(--clr-cardLight);
@@ -40,12 +44,21 @@
   --foreground: var(--clr-light);
   --background: var(--clr-dark);
 }
+.darkmode table, .darkmode table td, .darkmode table th {
+  border: solid 3px;
+  border-color: white;
+}
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-size: 18px;
   line-height: 1.6;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 100%;
 }
 
 .card {
@@ -81,4 +94,13 @@ body {
 .btn-accent {
   background: var(--clr-accent);
   color: var(--foreground);
+}
+
+table {
+  counter-reset: tableCount;
+}
+
+.counterCell:before {
+  content: counter(tableCount);
+  counter-increment: tableCount;
 }

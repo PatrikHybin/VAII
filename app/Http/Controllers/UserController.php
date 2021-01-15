@@ -7,6 +7,7 @@ use Aginev\Datagrid\Datagrid;
 use App\Models\Book;
 use App\Models\User;
 use Illuminate\Http\Request;
+use function MongoDB\BSON\toJSON;
 
 class UserController extends Controller
 {
@@ -25,7 +26,7 @@ class UserController extends Controller
     {
         $users = User::paginate(25);
 
-        $grid = new Datagrid($users, $request->get('f', []));
+        /*$grid = new Datagrid($users, $request->get('f', []));
 
         $grid->setColumn('name', 'Full Name')
             ->setColumn('email', 'Email')
@@ -34,10 +35,10 @@ class UserController extends Controller
                     return '<a href="' . route('user.edit', [$row->id]) . '"title="Edit" class="btn btn-sm btn-primary">Edit</a>
                             <a href="' . route('user.delete', [$row->id]) . '"title="Delete" data-method="DELETE" class="btn btn-sm btn-danger" data-confrim="Are you sure?">Delete</a>';
                 }
-            ]);
+            ]);*/
 
         return view('user.index', [
-            'grid' => $grid
+            'users' => $users
         ]);
     }
 
@@ -67,6 +68,14 @@ class UserController extends Controller
             'email' => 'required|email|unique:users,email',
             'password' => 'required|min:4|confirmed'
         ]);
+
+        /*$user = User::create([
+           'name' => $request->get('name'),
+           'email' => $request->get('email'),
+           'password' => $request->get('password'),
+           'password_confirm' => $request->get('password_confirm'),
+           'created_at' => Carbon::now()
+       ]);*/
 
         $user = User::create($request->all());
         $user->save();
@@ -130,5 +139,22 @@ class UserController extends Controller
     {
         $user->delete();
         return redirect()->route('user.index');
+    }
+
+    public function ajaxChangeRole() {
+
+
+        $user = User::find($_POST['userID']);
+        $user->update([
+            'role' => $_POST['role']
+        ]);
+
+        return $_POST;
+    }
+
+    public function usersList(Request $request) {
+
+        $users = User::all();
+        return response()->json($users);
     }
 }

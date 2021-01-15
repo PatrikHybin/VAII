@@ -23,6 +23,10 @@
                                 <a href="{{ route('book.editBook', [@$model->id]) }}" class="btn btn-sm btn-dark" role="button">Edit book</a>
                             </div>
                         </div>
+
+
+
+                    </div>
                 </div>
             </div>
         </div>

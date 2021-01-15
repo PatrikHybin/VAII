@@ -14,6 +14,7 @@ class Book extends Model
         'name',
         'text',
         'image',
+        'view_number',
         'user_id'
     ];
 

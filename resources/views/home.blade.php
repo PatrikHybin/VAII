@@ -98,7 +98,7 @@
 
                             </a>
                             <div class="col-8">
-                                {{ $book->id }}
+                                {{ $book->view_number }}
                             </div>
                         </div>
                     @endforeach
