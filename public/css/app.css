@@ -10091,6 +10091,10 @@ table {
   padding: 5px 20px;
 }
 
+.rating {
+  display: inline;
+}
+
 
 .bookslistimage,
 .bookslisttext,

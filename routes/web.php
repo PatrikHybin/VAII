@@ -25,9 +25,14 @@ Route::get('/', function () {
 Auth::routes();
 
 
-Route::get('/home', [App\Http\Controllers\BookController::class, 'home'])->name('home');
-Route::get('/book', [App\Http\Controllers\BookController::class, 'index'])->name('homeBook');
+Route::get('/home', [BookController::class, 'home'])->name('home');
+Route::resource('book', BookController::class);
+Route::get('/book', [BookController::class, 'index'])->name('book.index');
 Route::get('/book/{book}/info', [BookController::class , 'show'])->name('book.info');
+
+Route::resource('rating', RatingController::class);
+Route::post('/book/{book}/ajaxSetRating', [RatingController::class, 'ajaxSetRating'])->name('rating.ajaxSetRating');
+Route::get('/book/{book}/ajaxGetRating', [RatingController::class, 'ajaxGetRating'])->name('rating.ajaxGetRating');
 
 /*Route::get('/book', function () {
     return view('book.index');
@@ -37,9 +42,7 @@ Route::get('/book/{book}/info', [BookController::class , 'show'])->name('book.in
 
 
 Route::group(['middleware' => ['auth']], function () {
-    Route::resource('book', BookController::class);
     Route::get('/book/{book}/delete', [BookController::class , 'destroy'])->name('book.delete');
-    Route::get('/book/{book}/info', [BookController::class , 'show'])->name('book.info');
     Route::get('/book/{book}/edit', [BookController::class , 'edit'])->name('book.editBook');
 
     Route::resource('user', UserController::class);
@@ -48,8 +51,7 @@ Route::group(['middleware' => ['auth']], function () {
     Route::post('/ajaxChangeRole', [UserController::class, 'ajaxChangeRole'])->name('user.ajaxChangeRole');
     Route::get('/usersList', [UserController::class, 'usersList'])->name('user.usersList');
 
-    Route::post('/ajaxSetRating', [RatingController::class, 'ajaxSetRating'])->name('rating.ajaxSetRating');
-    Route::get('/ajaxGetRating', [RatingController::class, 'ajaxGetRating'])->name('rating.ajaxGetRating');
+
 });
 
 

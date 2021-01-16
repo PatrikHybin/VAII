@@ -5,23 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4d1e6983-6dc2-481e-8734-83fb625408e0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8482fcfd-e7f7-4f81-8168-6c46a1f8ca8a.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/8482fcfd-e7f7-4f81-8168-6c46a1f8ca8a.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BookController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BookController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/RatingController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/RatingController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Book.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Book.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Policies/BookPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/BookPolicy.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Rating.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Rating.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Policies/UserPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/UserPolicy.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_01_12_131104_create_books_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_01_12_131104_create_books_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/darkMode.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/darkMode.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/users.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/darkMode.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/darkMode.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/rating.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/ratings.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/users.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/sass/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/main.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/book/formBook.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/book/formBook.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/book/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/book/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/book/info.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/book/info.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/user/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -216,7 +223,7 @@
       <workItem from="1610643911391" duration="475000" />
       <workItem from="1610644406244" duration="27477000" />
       <workItem from="1610711080529" duration="30933000" />
-      <workItem from="1610798855572" duration="12961000" />
+      <workItem from="1610798855572" duration="38138000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1610560388609</created>
@@ -253,7 +260,21 @@
       <option name="project" value="LOCAL" />
       <updated>1610744581758</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="rating">
+      <created>1610813909175</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1610813909175</updated>
+    </task>
+    <task id="LOCAL-00007" summary="rating">
+      <created>1610813923714</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1610813923714</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -264,7 +285,8 @@
     <MESSAGE value="added css code to books" />
     <MESSAGE value="css additions" />
     <MESSAGE value="roles and users rework" />
-    <option name="LAST_COMMIT_MESSAGE" value="roles and users rework" />
+    <MESSAGE value="rating" />
+    <option name="LAST_COMMIT_MESSAGE" value="rating" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1209" y="404" width="617" height="438" key="#Notifications" timestamp="1609970935632">
@@ -280,16 +302,16 @@
       <screen x="-1920" y="0" width="1920" height="1160" />
     </state>
     <state x="-1230" y="327" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/-1920.0.1920.1160@-1920.0.1920.1160" timestamp="1610650804269" />
-    <state x="690" y="300" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1610737332417">
+    <state x="690" y="300" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1610826586802">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1230" y="335" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/-1920.0.1920.1160@-1920.0.1920.1160" timestamp="1610466338682" />
-    <state x="690" y="300" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/-1920.0.1920.1160@0.0.1920.1040" timestamp="1610737332417" />
-    <state x="567" y="97" key="CommitChangelistDialog2" timestamp="1610744580620">
+    <state x="690" y="300" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/-1920.0.1920.1160@0.0.1920.1040" timestamp="1610826586802" />
+    <state x="567" y="97" key="CommitChangelistDialog2" timestamp="1610813922581">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1353" y="108" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1160@-1920.0.1920.1160" timestamp="1610579755607" />
-    <state x="567" y="97" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1160@0.0.1920.1040" timestamp="1610744580620" />
+    <state x="567" y="97" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1160@0.0.1920.1040" timestamp="1610813922581" />
     <state x="629" y="298" key="EditFileWatcherDialog" timestamp="1610547984694">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -327,11 +349,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1160@0.0.1920.1040" timestamp="1610735481424" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1610744612657">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1610813926518">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1368" y="282" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1160@-1920.0.1920.1160" timestamp="1610579758858" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1160@0.0.1920.1040" timestamp="1610744612657" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1160@0.0.1920.1040" timestamp="1610813926518" />
     <state x="-991" y="393" width="415" height="371" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1609971227528">
       <screen x="-1920" y="0" width="1920" height="1160" />
     </state>
@@ -349,10 +371,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="600" height="428" key="javadoc.popup/0.0.1920.1040/-1920.0.1920.1160@0.0.1920.1040" timestamp="1610660036704" />
-    <state x="623" y="229" width="672" height="608" key="search.everywhere.popup" timestamp="1610808344010">
+    <state x="616" y="240" key="run.anything.popup" timestamp="1610820726762">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/-1920.0.1920.1160@0.0.1920.1040" timestamp="1610820726762" />
+    <state x="623" y="229" width="672" height="608" key="search.everywhere.popup" timestamp="1610826605685">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1297" y="255" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1160@-1920.0.1920.1160" timestamp="1610465752738" />
-    <state x="623" y="229" width="672" height="608" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1160@0.0.1920.1040" timestamp="1610808344010" />
+    <state x="623" y="229" width="672" height="608" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1160@0.0.1920.1040" timestamp="1610826605685" />
   </component>
 </project>

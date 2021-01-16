@@ -42,7 +42,7 @@ class UserPolicy
      */
     public function create(User $user)
     {
-        return Auth::check();
+        return Auth::user()->role == 'admin';
     }
 
     /**
@@ -54,7 +54,7 @@ class UserPolicy
      */
     public function update(User $user, User $model)
     {
-        return Auth::check();
+        return Auth::user()->id == $model->id || Auth::user()->role == 'admin';
     }
 
     /**
@@ -66,7 +66,7 @@ class UserPolicy
      */
     public function delete(User $user, User $model)
     {
-        return Auth::check();
+        return Auth::user()->role == 'admin';
     }
 
     /**

@@ -11,8 +11,8 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
-    <script src="{{ asset('js/darkMode.js') }}" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery-3.4.1.js"></script>
 
 
 
@@ -43,9 +43,9 @@
                         @auth
                             <a class="nav-link" href="{{ route('user.index') }}">{{ __('Users') }}</a>
                         @endauth
-                            @auth
-                                <a class="nav-link" href="{{ route('book.index') }}">{{ __('Books') }}</a>
-                            @endauth
+                        @auth
+                            <a class="nav-link" href="{{ route('book.index') }}">{{ __('Books') }}</a>
+                        @endauth
                     </ul>
 
                     <!-- Right Side Of Navbar -->
@@ -65,7 +65,7 @@
                             @endif
                         @else
                             <li class="nav-item dropdown">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     {{ @Auth::user()->name }}
                                 </a>
 
@@ -75,7 +75,17 @@
                                                      document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}
                                     </a>
-                                    <a href="" class="dropdown-item dark-mode-toggle" id="dark-mode-toggle">Change Theme</a>
+
+                                        <script>
+                                            var user = 0;
+                                    @if(auth()->check())
+                                            user = 1;
+                                        </script>
+                                    @endif
+
+                                        <a href="" class="dropdown-item dark-mode-toggle" id="dark-mode-toggle">Change Theme</a>
+                                        <script src="{{ asset('js/darkMode.js') }}" defer></script>
+                                        <script src="http://code.jquery.com/jquery-3.4.1.js"></script>
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                                         @csrf
                                     </form>

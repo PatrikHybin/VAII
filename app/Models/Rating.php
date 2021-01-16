@@ -19,8 +19,5 @@ class Rating extends Model
         'created_at' => 'datetime'
     ];
 
-    public function getAverageRating(int $book_id){
-        $average_rating = Rating::query()->where('id', $book_id)->sum('rating')/(Rating::query()->where('id', $book_id)->count('rating'));
-        return $average_rating;
-    }
+
 }

@@ -86,7 +86,7 @@
                         </div>
                     </div>
 
-                    @foreach($books as $book)
+                    @foreach($booksNumbers as $book)
                         <div class="row">
                             <a href="{{ route('book.info',[$book->id]) }}">
                                 <div class="col-2 mb-3">
@@ -97,7 +97,7 @@
                                 </div>
 
                             </a>
-                            <div class="col-8">
+                            <div class="col-2">
                                 {{ $book->view_number }}
                             </div>
                         </div>
@@ -134,8 +134,8 @@
                                 </div>
 
                             </a>
-                            <div class="col-8">
-                                {{ $book->id }}
+                            <div class="col-2">
+                                {{ $book->averageRating($book->id) }}
                             </div>
                         </div>
                     @endforeach

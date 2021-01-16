@@ -17,7 +17,7 @@ class CreateBooksTable extends Migration
             $table->id();
             $table->string('name');
             $table->Text('text');
-            $table->string('image')->nullable();
+            $table->Text('image')->nullable();
             $table->Integer('view_number')->nullable();
             $table->foreignId('user_id')
                 ->constrained('users')

@@ -18,7 +18,8 @@
                                 <a href="{{ route('user.create') }}" class="btn btn-sm btn-success" role="button">Add new user</a>
                             </div>
                         @endcan
-                            <div id="notifDiv">
+
+                            <div class="notifDivUsers">
 
                             </div>
 

@@ -17,7 +17,7 @@ $(document).ready(function() {
             },
             success:function(response) {
                 list();
-                showAlert(200, 'Role changed successfully');
+                showAlertUsers(200, 'Role changed successfully');
 
             }
         });
@@ -86,12 +86,12 @@ function list() {
 }
 
 
-function showAlert(code, message) {
-    $('#notifDiv').css('background', (code === 200 ? 'green': 'red'));
-    $('#notifDiv').fadeIn();
-    $('#notifDiv').text(message);
+function showAlertUsers(code, message) {
+    $('#notifDivUsers').css('background', (code === 200 ? 'green': 'red'));
+    $('#notifDivUsers').fadeIn();
+    $('#notifDivUsers').text(message);
     setTimeout(() =>{
-        $('#notifDiv').fadeOut();
+        $('#notifDivUsers').fadeOut();
     }, 3000)
 }
 

@@ -3,20 +3,20 @@
 namespace App\Http\Controllers;
 
 use App\Models\Book;
+use App\Models\Rating;
 use Illuminate\Http\Request;
 use function PHPUnit\Framework\stringContains;
 use function Sodium\increment;
 
 class BookController extends Controller
 {
-    public function __construct()
+    /*public function __construct()
     {
         //$this->middleware('auth', ['except' => [
         //    'index',
         //]]);
         $this->authorizeResource(Book::class, 'book');
-    }
-
+    }*/
 
     /**
      * Display a listing of the resource.
@@ -37,9 +37,14 @@ class BookController extends Controller
     public function home(Request $request)
     {
         $books = Book::all()->sortByDesc('created_at')->take(3);
+        $booksNumbers = Book::all()->sortByDesc('view_number')->take(3);
+        $rates = Rating::all()->sortByDesc('rating')->take(3);
+
+
 
         return view('home', [
-            'books' => $books
+            'books' => $books,
+            'booksNumbers' => $booksNumbers
         ]);
 
     }

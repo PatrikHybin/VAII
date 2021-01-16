@@ -4,10 +4,20 @@ namespace App\Http\Controllers;
 
 use App\Models\Book;
 use App\Models\Rating;
+use App\Models\User;
 use Illuminate\Http\Request;
+use mysql_xdevapi\Exception;
+use Psy\Util\Json;
+use function MongoDB\BSON\toJSON;
 
 class RatingController extends Controller
 {
+
+    public function __construct()
+    {
+        $this->authorizeResource(Rating::class, 'rating');
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -85,11 +95,32 @@ class RatingController extends Controller
     }
 
     public function ajaxGetRating() {
-        $average_rating = (Rating::query()->where('id', $_GET['bookID'])->sum('rating'))/(Rating::query()->where('id', $_GET['bookID'])->count('rating'));
-        return response()->json($average_rating);
+        try {
+            if (Rating::all()->where('book_id', '=', $_GET['bookID'])->count() != 0) {
+                $book = Rating::all()->where('book_id', '=', $_GET['bookID']);
+                $ratingSum = $book->sum('rating');
+                $ratingCount = $book->count('rating');
+
+                $average_rating = $ratingSum / $ratingCount;
+                $rating = JSON::encode([
+                    'average_rating' => ($average_rating != 0) ? $average_rating : "undefined",
+                    'user_rating' =>  ($book->where('user_id','=',$_GET['userID'])->sum('rating') != 0) ? $book->where('user_id','=',$_GET['userID'])->sum('rating') : "undefined",
+                    'number_of_ratings' => ($ratingCount != 0) ? $ratingCount : "undefined",
+                ]);
+                return response()->json($rating);
+            } else {
+                $rating = JSON::encode("nieco:d");
+                return response()->json($rating);
+            }
+
+        } catch (Exception $exception) {
+
+        }
+
     }
 
     public function ajaxSetRating() {
-        $rating = Rating::query()->firstOrCreate(['user_id' => $_POST['userID'],'book_id' => $_POST['bookID']]);
+        Rating::query()->updateOrCreate(['user_id' => $_POST['userID'],'book_id' => $_POST['bookID']],['rating' => $_POST['rating']]);
+
     }
 }
