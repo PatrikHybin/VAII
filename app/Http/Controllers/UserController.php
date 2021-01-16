@@ -143,13 +143,12 @@ class UserController extends Controller
 
     public function ajaxChangeRole() {
 
-
         $user = User::find($_POST['userID']);
         $user->update([
             'role' => $_POST['role']
         ]);
 
-        return $_POST;
+        //return $_POST;
     }
 
     public function usersList(Request $request) {

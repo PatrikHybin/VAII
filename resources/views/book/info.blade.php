@@ -24,6 +24,15 @@
                             </div>
                         </div>
 
+                        <div id="get_rating">
+
+                        </div>
+                        <script>
+                            var user = {!! auth()->user()->toJson() !!};
+                            var book = {!! \App\Models\Book::query()->find(@$model) !!};
+                        </script>
+                        <script src="{{ asset('js/rating.js') }}" defer></script>
+                        <script src="http://code.jquery.com/jquery-3.4.1.js"></script>
 
 
                     </div>

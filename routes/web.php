@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\RatingController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\BookController;
 use Illuminate\Support\Facades\Auth;
@@ -46,6 +47,9 @@ Route::group(['middleware' => ['auth']], function () {
 
     Route::post('/ajaxChangeRole', [UserController::class, 'ajaxChangeRole'])->name('user.ajaxChangeRole');
     Route::get('/usersList', [UserController::class, 'usersList'])->name('user.usersList');
+
+    Route::post('/ajaxSetRating', [RatingController::class, 'ajaxSetRating'])->name('rating.ajaxSetRating');
+    Route::get('/ajaxGetRating', [RatingController::class, 'ajaxGetRating'])->name('rating.ajaxGetRating');
 });
 
 

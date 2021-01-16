@@ -22,7 +22,7 @@
             <label>Input image url</label><br>
             <input type="text" id="image" name="image" value="{{ @$model->image }}" placeholder="Enter image url">
         </div>
-        <div>
+
             <button type="submit" class="btn btn-primary btn-accent">
         @if($method === 'put')
             Edit Book

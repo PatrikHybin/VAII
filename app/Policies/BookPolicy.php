@@ -66,7 +66,7 @@ class BookPolicy
      */
     public function delete(User $user, Book $book)
     {
-        return true;
+        return Auth::check();
     }
 
     /**
