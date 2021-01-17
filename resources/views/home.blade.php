@@ -123,9 +123,9 @@
                         </div>
                     </div>
 
-                    @foreach($books as $book)
+                    @foreach($booksRate as $book)
                         <div class="row">
-                            <a href="{{ route('book.info',[$book->id]) }}">
+                            <a href="{{ route('book.info',[$book->book_id]) }}">
                                 <div class="col-2 mb-3">
                                     <img src="{{ $book->image }}" alt="Image of book cover" class ="bookCover" width="140px" height="186px">
                                 </div>
@@ -135,10 +135,11 @@
 
                             </a>
                             <div class="col-2">
-                                {{ $book->averageRating($book->id) }}
+                                {{ $book->averageRating }}
                             </div>
                         </div>
                     @endforeach
+
             </div>
         </div>
     </div>

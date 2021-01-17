@@ -31,7 +31,10 @@ class Book extends Model
         $book = Rating::query()->where('book_id','=', $id);
         $rating = $book->sum('rating')/$book->count();
         return  $rating;
+    }
 
+    public function ratings() {
+        return $this->hasMany('Rating');
     }
 
 }

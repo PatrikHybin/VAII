@@ -19,5 +19,9 @@ class Rating extends Model
         'created_at' => 'datetime'
     ];
 
+    public function book() {
+        return $this->belongsTo('Book');
+    }
+
 
 }

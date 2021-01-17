@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Book;
 use App\Models\Rating;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use function PHPUnit\Framework\stringContains;
 use function Sodium\increment;
 
@@ -38,13 +39,16 @@ class BookController extends Controller
     {
         $books = Book::all()->sortByDesc('created_at')->take(3);
         $booksNumbers = Book::all()->sortByDesc('view_number')->take(3);
-        $rates = Rating::all()->sortByDesc('rating')->take(3);
+        //$bookIDs = Rating::query()->select('book_id')->orderByDesc('rating')->take(3);
 
-
+        $booksRate = DB::table('books')->join('ratings','books.id','=','book_id')
+            ->select(DB::raw('books.*,ratings.*,FORMAT(SUM(rating)/COUNT(rating),0) as averageRating'))
+            ->orderByDesc('averageRating')->groupBy('ratings.book_id')->take(3)->get();
 
         return view('home', [
             'books' => $books,
-            'booksNumbers' => $booksNumbers
+            'booksNumbers' => $booksNumbers,
+            'booksRate' => $booksRate
         ]);
 
     }

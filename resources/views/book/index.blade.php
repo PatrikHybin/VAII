@@ -30,7 +30,7 @@
                                             {{ $book->name }}
                                         </a>
                                         <br>
-                                        @if($book->user_id === auth()->id() || $book->getUser($book->user_id)->role === 'admin')
+                                        @if(Auth::check() && ($book->user_id === \Illuminate\Support\Facades\Auth::id() || $book->getUser(\Illuminate\Support\Facades\Auth::id())->role === 'admin'))
                                         <a href={{ route('book.delete', [$book->id]) }} title="Delete" data-method="DELETE" class="btn btn-sm btn-danger bookslistdelete" data-confrim="Are you sure?">Delete</a>
                                         @endif
                                     </div>
