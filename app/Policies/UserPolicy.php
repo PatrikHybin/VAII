@@ -19,7 +19,7 @@ class UserPolicy
      */
     public function viewAny(User $user)
     {
-        return true;
+        return Auth::user()->role == 'admin';
     }
 
     /**
@@ -31,7 +31,7 @@ class UserPolicy
      */
     public function view(User $user, User $model)
     {
-        //
+        return Auth::user()->role == 'admin';
     }
 
     /**
@@ -66,7 +66,7 @@ class UserPolicy
      */
     public function delete(User $user, User $model)
     {
-        return Auth::user()->role == 'admin';
+        return Auth::user()->id == $model->id || Auth::user()->role == 'admin';
     }
 
     /**

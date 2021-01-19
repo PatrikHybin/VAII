@@ -41,7 +41,9 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
                         @auth
-                            <a class="nav-link" href="{{ route('user.index') }}">{{ __('Users') }}</a>
+                            @if(auth()->user()->role === 'admin')
+                                <a class="nav-link" href="{{ route('user.index') }}">{{ __('Users') }}</a>
+                            @endif
                         @endauth
                         @auth
                             <a class="nav-link" href="{{ route('book.index') }}">{{ __('Books') }}</a>
@@ -64,6 +66,9 @@
                                 </li>
                             @endif
                         @else
+                            <a href="" class="nav-link dark-mode-toggle" id="dark-mode-toggle">Change Theme</a>
+                            <script src="{{ asset('js/darkMode.js') }}" defer></script>
+                            <script src="http://code.jquery.com/jquery-3.4.1.js"></script>
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     {{ @Auth::user()->name }}
@@ -76,16 +81,8 @@
                                         {{ __('Logout') }}
                                     </a>
 
-                                        <script>
-                                            var user = 0;
-                                    @if(auth()->check())
-                                            user = 1;
-                                        </script>
-                                    @endif
-
-                                        <a href="" class="dropdown-item dark-mode-toggle" id="dark-mode-toggle">Change Theme</a>
-                                        <script src="{{ asset('js/darkMode.js') }}" defer></script>
-                                        <script src="http://code.jquery.com/jquery-3.4.1.js"></script>
+                                        <a href="{{route('user.edit', [auth()->id()])}}" title="Edit" class="dropdown-item">Edit profile</a>
+                                        <a href="{{route('user.delete', [auth()->id()])}}" title="Delete" data-method="DELETE" class="dropdown-item" onclick="return confirm('Are you sure you want to delete your profile ?');" data-confrim="Are you sure?">Delete profile</a>
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                                         @csrf
                                     </form>

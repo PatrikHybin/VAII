@@ -42,7 +42,7 @@ class RatingPolicy
      */
     public function create(User $user)
     {
-        //
+        return true;
     }
 
     /**
@@ -54,7 +54,7 @@ class RatingPolicy
      */
     public function update(User $user, Rating $rating)
     {
-        //
+        return true;
     }
 
     /**
@@ -66,7 +66,7 @@ class RatingPolicy
      */
     public function delete(User $user, Rating $rating)
     {
-        //
+        return true;
     }
 
     /**

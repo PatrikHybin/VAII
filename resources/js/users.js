@@ -40,6 +40,7 @@ function list() {
                             <tr>
                                 <th>#</th>
                                 <th>Name</th>
+                                <th>Email</th>
                                 <th>Action</th>
                             </tr>
                             </thead>
@@ -51,6 +52,7 @@ function list() {
                 $('.userList tbody').append(`<tr>
                         <th scope="row" class="counterCell"></th>
                         <td>${element.name}</td>
+                        <td>${element.email}</td>
                         <td>
                         ` + ((user.id == element.id || user.role == 'admin') ? `
                         <a href="user/${element.id}/edit" title="Edit" class="btn btn-sm btn-primary">Edit</a>

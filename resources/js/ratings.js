@@ -97,7 +97,7 @@ function renderAll(response) {
     var rating = (response.average_rating !== undefined) ? response.average_rating : "";
     var number_of_ratings = (response.number_of_ratings !== undefined) ? response.number_of_ratings : "";
     $('#get_rating').empty();
-    $('#get_rating').append(`<p>Rating : `+rating+`</p>
+    $('#get_rating').append(`<p>Rating : `+Math.round(rating)+`</p>
                 <ul class="list-inline">
                 `+renderStars(rating)+ `
 

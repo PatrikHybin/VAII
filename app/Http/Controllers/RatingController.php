@@ -96,7 +96,7 @@ class RatingController extends Controller
 
     public function ajaxGetRating() {
         try {
-            if (Rating::all()->where('book_id', '=', $_GET['bookID'])->count() != 0) {
+            if (Rating::all()->where('book_id', '=', $_GET['bookID'])->count() !== 0) {
                 $book = Rating::all()->where('book_id', '=', $_GET['bookID']);
                 $ratingSum = $book->sum('rating');
                 $ratingCount = $book->count('rating');

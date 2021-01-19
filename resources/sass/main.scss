@@ -11,7 +11,7 @@
     --clr-dark: #000000;
 
     --clr-primary: #dbffa2;
-    --clr-secondary: #c3fcf2;
+    --clr-secondary: #ffffff;
     --clr-accent: #c15435;
 
     --clr-navLight: #def696;
@@ -34,13 +34,26 @@
         border-color:black;
 
     }
+
+    .ulList {
+        background: var(--clr-light);
+        color: var(--clr-dark);
+    }
+    .alist {
+        background: var(--clr-secondary);
+        color: var(--clr-dark);
+    }
+
+    @media all and (min-width: 992px) {
+        .alist:hover { background: #d0d0d0;  }
+    }
 }
 
 .darkmode {
     --clr-light: #abab89;
     --clr-dark: #373736;
 
-    --clr-primary: #202302;
+    --clr-primary: #5d5d5a;
     --clr-secondary: #ffffff;
     --clr-accent: #c15435;
 
@@ -63,6 +76,20 @@
         border:solid 3px;
         border-color:white;
 
+    }
+
+    .liList{
+        background: var(--clr-cardDark);
+        color: var(--clr-navLight);
+    }
+
+    .alist {
+        background: var(--clr-primary);
+        color: var(--clr-navLight);
+    }
+
+    @media all and (min-width: 992px) {
+        .alist:hover { background: #707070;  }
     }
 }
 
@@ -138,6 +165,26 @@ table {
 .rating{
     display: inline;
 }
+
+
+
+.homebookimg {
+    left: 20px;
+    margin-right: 0;
+}
+
+.homebookstats {
+    right: 0;
+    width: 30px;
+
+}
+
+.bookCover {
+    width: 140px;
+    height: 186px;
+}
+
+
 
 
 

@@ -126,6 +126,9 @@ class UserController extends Controller
 
 
         $user->update($request->all());
+        if ($user->role === 'user') {
+            return redirect()->route('home');
+        }
         return redirect()->route('user.index');
     }
 

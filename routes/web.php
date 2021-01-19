@@ -17,14 +17,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('welcome');
-});
+});*/
 
 
 Auth::routes();
 
 
+Route::get('/', [BookController::class, 'home'])->name('home');
 Route::get('/home', [BookController::class, 'home'])->name('home');
 Route::resource('book', BookController::class);
 Route::get('/book', [BookController::class, 'index'])->name('book.index');
@@ -42,11 +43,15 @@ Route::get('/book/{book}/ajaxGetRating', [RatingController::class, 'ajaxGetRatin
 
 
 Route::group(['middleware' => ['auth']], function () {
+
+
+
     Route::get('/book/{book}/delete', [BookController::class , 'destroy'])->name('book.delete');
     Route::get('/book/{book}/edit', [BookController::class , 'edit'])->name('book.editBook');
 
     Route::resource('user', UserController::class);
     Route::get('/user/{user}/delete', [UserController::class , 'destroy'])->name('user.delete');
+    Route::get('/user/{user}/edit', [UserController::class , 'edit'])->name('user.edit');
 
     Route::post('/ajaxChangeRole', [UserController::class, 'ajaxChangeRole'])->name('user.ajaxChangeRole');
     Route::get('/usersList', [UserController::class, 'usersList'])->name('user.usersList');

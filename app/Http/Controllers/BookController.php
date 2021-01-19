@@ -32,7 +32,6 @@ class BookController extends Controller
             'books' => $books
         ]);
 
-
     }
 
     public function home(Request $request)

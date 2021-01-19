@@ -19,6 +19,11 @@ class Book extends Model
         'user_id'
     ];
 
+    protected $hidden = [
+        'image',
+
+    ];
+
     protected $casts = [
         'created_at' => 'datetime'
     ];

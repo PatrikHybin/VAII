@@ -9982,7 +9982,7 @@ h3 {
   --clr-light: #ffffff;
   --clr-dark: #000000;
   --clr-primary: #dbffa2;
-  --clr-secondary: #c3fcf2;
+  --clr-secondary: #ffffff;
   --clr-accent: #c15435;
   --clr-navLight: #def696;
   --clr-navDark: #000000;
@@ -9999,11 +9999,24 @@ h3 {
   border: solid 3px;
   border-color: black;
 }
+:root .ulList {
+  background: var(--clr-light);
+  color: var(--clr-dark);
+}
+:root .alist {
+  background: var(--clr-secondary);
+  color: var(--clr-dark);
+}
+@media all and (min-width: 992px) {
+  :root .alist:hover {
+    background: #d0d0d0;
+  }
+}
 
 .darkmode {
   --clr-light: #abab89;
   --clr-dark: #373736;
-  --clr-primary: #202302;
+  --clr-primary: #5d5d5a;
   --clr-secondary: #ffffff;
   --clr-accent: #c15435;
   --clr-navLight: #def696;
@@ -10020,6 +10033,19 @@ h3 {
 .darkmode table, .darkmode table td, .darkmode table th {
   border: solid 3px;
   border-color: white;
+}
+.darkmode .liList {
+  background: var(--clr-cardDark);
+  color: var(--clr-navLight);
+}
+.darkmode .alist {
+  background: var(--clr-primary);
+  color: var(--clr-navLight);
+}
+@media all and (min-width: 992px) {
+  .darkmode .alist:hover {
+    background: #707070;
+  }
 }
 
 body {
@@ -10093,6 +10119,21 @@ table {
 
 .rating {
   display: inline;
+}
+
+.homebookimg {
+  left: 20px;
+  margin-right: 0;
+}
+
+.homebookstats {
+  right: 0;
+  width: 30px;
+}
+
+.bookCover {
+  width: 140px;
+  height: 186px;
 }
 
 
