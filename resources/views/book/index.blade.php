@@ -1,3 +1,4 @@
+
 @extends('layouts.app')
 
 @section('content')
@@ -25,13 +26,11 @@
                                 <a href="{{ route('book.info',[$book->id]) }}">
                                     <div>
                                         <img src="{{ $book->image }}" class="bookslistimage">
-                                        <br>
-                                        <a class="bookslisttext">
+                                        <p class="bookslisttext">
                                             {{ $book->name }}
-                                        </a>
-                                        <br>
+                                        </p>
                                         @if(Auth::check() && ($book->user_id === \Illuminate\Support\Facades\Auth::id() || $book->getUser(\Illuminate\Support\Facades\Auth::id())->role === 'admin'))
-                                        <a href={{ route('book.delete', [$book->id]) }} title="Delete" data-method="DELETE" class="btn btn-sm btn-danger bookslistdelete" data-confrim="Are you sure?">Delete</a>
+                                        <a href={{ route('book.delete', [$book->id]) }} title="Delete" data-method="DELETE" class="btn btn-danger bookslistdelete" data-confrim="Are you sure?">Delete</a>
                                         @endif
                                     </div>
                                 </a>

@@ -103,13 +103,13 @@ class RatingController extends Controller
 
                 $average_rating = $ratingSum / $ratingCount;
                 $rating = JSON::encode([
-                    'average_rating' => ($average_rating != 0) ? $average_rating : "undefined",
-                    'user_rating' =>  ($book->where('user_id','=',$_GET['userID'])->sum('rating') != 0) ? $book->where('user_id','=',$_GET['userID'])->sum('rating') : "undefined",
-                    'number_of_ratings' => ($ratingCount != 0) ? $ratingCount : "undefined",
+                    'average_rating' => ($average_rating != 0) ? $average_rating : " ",
+                    'user_rating' =>  ($book->where('user_id','=',$_GET['userID'])->sum('rating') != 0) ? $book->where('user_id','=',$_GET['userID'])->sum('rating') : " ",
+                    'number_of_ratings' => ($ratingCount != 0) ? $ratingCount : " ",
                 ]);
                 return response()->json($rating);
             } else {
-                $rating = JSON::encode("nieco:d");
+                $rating = JSON::encode("prazdne");
                 return response()->json($rating);
             }
 

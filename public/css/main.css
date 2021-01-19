@@ -144,6 +144,12 @@ table {
   padding: 5px 20px;
 }
 
+.card-body #get_rating {
+  position: absolute;
+  right: 15px;
+  top: 80px;
+}
+
 .rating {
   display: inline;
 }
@@ -156,6 +162,13 @@ table {
 .homebookstats {
   right: 0;
   width: 30px;
+}
+
+.homebookname {
+  overflow-wrap: break-word;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-right: 200px;
 }
 
 .bookCover {

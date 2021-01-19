@@ -1,3 +1,4 @@
+
 @extends('layouts.app')
 
 @section('content')
@@ -39,7 +40,7 @@
                             var user = 0;
                             var book = 0;
                             @if(\Illuminate\Support\Facades\Auth::check())
-                            user = {!! \Illuminate\Support\Facades\Auth::user()->toJson() !!};
+                                user = {!! \Illuminate\Support\Facades\Auth::user()->toJson() !!};
                             book = {!! \App\Models\Book::query()->find(@$model->id) !!};
                             @endif
                         </script>

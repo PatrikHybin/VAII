@@ -1,22 +1,23 @@
-<div class="form-group text-danger">
-    @foreach ($errors->all() as $error)
-        {{ $error }}<br>
-    @endforeach
-</div>
-
 <form method="post" action="{{ $action }}" enctype="multipart/form-data">
     @csrf
     @method($method)
 
+
     <div class="form-group">
         <label for="name">Book Name</label><br>
         <input class="col-md-12" type="text" id="name" name="name" placeholder="Book name" value="{{ @$model->name }}">
-    </div>
 
+    </div>
+    @error('name')
+    <div class="alert alert-danger">{{ $message }}</div>
+    @enderror
     <div class="form-group">
         <label>Description</label><br>
         <textarea class="col-md-12" name="text" rows="4" id="text" placeholder="Book description">{{ @$model->text }}</textarea>
     </div>
+    @error('text')
+    <div class="alert alert-danger">{{ $message }}</div>
+    @enderror
 
     <div class="form-group">
         <label>Input image url</label><br>

@@ -4,9 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4d1e6983-6dc2-481e-8734-83fb625408e0" name="Default Changelist" comment="">
+    <list default="true" id="4d1e6983-6dc2-481e-8734-83fb625408e0" name="Default Changelist" comment="modifications">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/RatingController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/RatingController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ratings.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ratings.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/ratings.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/ratings.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/book/formBook.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/book/formBook.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/book/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/book/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/book/info.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/book/info.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/user/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/form.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,7 +165,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.data.extractors.current.export.id" value="Comma-separated (CSV)_id" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/Active-Deactive-Status-in-laravel-using-ajax-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Semestralka" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -203,7 +213,7 @@
       <workItem from="1610711080529" duration="30933000" />
       <workItem from="1610798855572" duration="44698000" />
       <workItem from="1610880679824" duration="1971000" />
-      <workItem from="1611049173426" duration="13394000" />
+      <workItem from="1611049173426" duration="18484000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1610560388609</created>
@@ -275,7 +285,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611060726526</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="css main page">
+      <created>1611085607996</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1611085607996</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -290,7 +307,8 @@
     <MESSAGE value="Rating comlete + authorization" />
     <MESSAGE value="compete without some css" />
     <MESSAGE value="css main page" />
-    <option name="LAST_COMMIT_MESSAGE" value="css main page" />
+    <MESSAGE value="modifications" />
+    <option name="LAST_COMMIT_MESSAGE" value="modifications" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1209" y="404" width="617" height="438" key="#Notifications" timestamp="1609970935632">
@@ -311,20 +329,20 @@
     </state>
     <state x="-1230" y="335" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/-1920.0.1920.1160@-1920.0.1920.1160" timestamp="1610466338682" />
     <state x="690" y="300" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/-1920.0.1920.1160@0.0.1920.1040" timestamp="1610826586802" />
-    <state x="567" y="97" key="CommitChangelistDialog2" timestamp="1611060723917">
+    <state x="567" y="97" key="CommitChangelistDialog2" timestamp="1611091111810">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1353" y="108" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1160@-1920.0.1920.1160" timestamp="1610839202730" />
-    <state x="567" y="97" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1160@0.0.1920.1040" timestamp="1611060723917" />
+    <state x="567" y="97" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1160@0.0.1920.1040" timestamp="1611091111810" />
     <state x="629" y="298" key="EditFileWatcherDialog" timestamp="1610547984694">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="629" y="298" key="EditFileWatcherDialog/0.0.1920.1040/-1920.0.1920.1160@0.0.1920.1040" timestamp="1610547984694" />
-    <state x="826" y="319" key="FileChooserDialogImpl" timestamp="1610731603829">
+    <state x="826" y="319" key="FileChooserDialogImpl" timestamp="1611089047020">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1094" y="356" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1160@-1920.0.1920.1160" timestamp="1610461985104" />
-    <state x="826" y="319" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1160@0.0.1920.1040" timestamp="1610731603829" />
+    <state x="826" y="319" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1160@0.0.1920.1040" timestamp="1611089047020" />
     <state x="808" y="420" key="Github.ShareDialog" timestamp="1610560092288">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -353,11 +371,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1160@0.0.1920.1040" timestamp="1610735481424" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1611060736839">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1611091160013">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1368" y="282" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1160@-1920.0.1920.1160" timestamp="1610579758858" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1160@0.0.1920.1040" timestamp="1611060736839" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1160@0.0.1920.1040" timestamp="1611091160013" />
     <state x="-991" y="393" width="415" height="371" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1609971227528">
       <screen x="-1920" y="0" width="1920" height="1160" />
     </state>

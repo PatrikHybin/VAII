@@ -92,10 +92,19 @@ function stars() {
 }
 
 function renderAll(response) {
-
-    var user_rating = (response.user_rating !==  undefined) ? response.user_rating : "";
-    var rating = (response.average_rating !== undefined) ? response.average_rating : "";
-    var number_of_ratings = (response.number_of_ratings !== undefined) ? response.number_of_ratings : "";
+    var user_rating
+    var rating
+    var number_of_ratings
+    if (response === 'prazdne') {
+        user_rating =  " ";
+        rating = " ";
+        number_of_ratings = " ";
+    } else {
+        user_rating = response.user_rating;
+        rating = response.average_rating;
+        number_of_ratings = response.number_of_ratings;
+    }
+    console.log(user_rating);
     $('#get_rating').empty();
     $('#get_rating').append(`<p>Rating : `+Math.round(rating)+`</p>
                 <ul class="list-inline">
