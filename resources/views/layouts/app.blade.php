@@ -52,8 +52,12 @@
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
+                        <a href="" class="nav-link dark-mode-toggle" id="dark-mode-toggle">Change Theme</a>
+                        <script src="{{ asset('js/darkMode.js') }}" defer></script>
+                        <script src="http://code.jquery.com/jquery-3.4.1.js"></script>
                         <!-- Authentication Links -->
                         @guest
+
                             @if (Route::has('login'))
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
@@ -66,23 +70,22 @@
                                 </li>
                             @endif
                         @else
-                            <a href="" class="nav-link dark-mode-toggle" id="dark-mode-toggle">Change Theme</a>
-                            <script src="{{ asset('js/darkMode.js') }}" defer></script>
-                            <script src="http://code.jquery.com/jquery-3.4.1.js"></script>
+
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     {{ @Auth::user()->name }}
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+
+
+                                    <a href="{{route('user.edit', [auth()->id()])}}" title="Edit" class="dropdown-item">Edit profile</a>
+                                    <a href="{{route('user.delete', [auth()->id()])}}" title="Delete" data-method="DELETE" class="dropdown-item" onclick="return confirm('Are you sure you want to delete your profile ?');" data-confrim="Are you sure?">Delete profile</a>
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}
                                     </a>
-
-                                        <a href="{{route('user.edit', [auth()->id()])}}" title="Edit" class="dropdown-item">Edit profile</a>
-                                        <a href="{{route('user.delete', [auth()->id()])}}" title="Delete" data-method="DELETE" class="dropdown-item" onclick="return confirm('Are you sure you want to delete your profile ?');" data-confrim="Are you sure?">Delete profile</a>
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                                         @csrf
                                     </form>
